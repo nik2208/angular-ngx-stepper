@@ -1,0 +1,30 @@
+<div class="stepper">
+  <div class="stepper-header">
+    <ol class="steps">
+      @for(step of steps; track step; let i = $index) {
+        <li 
+          class="step"
+          [class.active]="selectedIndex === i"
+          [class.completed]="step.completed && i < selectedIndex"
+          [class.done]="step.state === 'done' && i === selectedIndex"
+          (click)="selectStep(i)">
+          @if(step.stepLabel) {
+            <ng-container *ngTemplateOutlet="step.stepLabel.template"></ng-container>
+          }
+        </li>
+      }
+    </ol>
+  </div>
+  <div class="stepper-body">
+    @for(step of steps; track step; let i = $index) {
+      @if(selectedIndex === i) {
+        <div 
+          class="content active"
+          @.enter
+          @.leave>
+          <ng-container *ngTemplateOutlet="step.content"></ng-container>
+        </div>
+      }
+    }
+  </div>
+</div>

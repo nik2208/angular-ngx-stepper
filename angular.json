@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-stepper": {
+    "angular-ngx-stepper": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -25,7 +25,7 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ]
           },
           "configurations": {
@@ -56,16 +56,42 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ngx-stepper:build:production"
+              "buildTarget": "angular-ngx-stepper:build:production"
             },
             "development": {
-              "buildTarget": "ngx-stepper:build:development"
+              "buildTarget": "angular-ngx-stepper:build:development"
             }
           },
           "defaultConfiguration": "development"
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        }
+      }
+    },
+    "ngx-stepper": {
+      "projectType": "library",
+      "root": "projects/ngx-stepper",
+      "sourceRoot": "projects/ngx-stepper/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-stepper/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-stepper/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "projects/ngx-stepper/tsconfig.spec.json"
+          }
         }
       }
     }
