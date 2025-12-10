@@ -1,14 +1,14 @@
 {
-  "name": "ngx-stepper",
-  "version": "1.0.0",
+  "name": "ngx-stepper-component",
+  "version": "1.0.2",
   "description": "Modern Angular stepper/wizard component built on Angular CDK. Updated port of angular-ng-stepper for Angular 20+",
   "keywords": ["angular", "stepper", "wizard", "cdk", "component", "form"],
   "author": "Nicola (based on angular-ng-stepper by Giorgi Merabishvili)",
   "license": "MIT",
-  "homepage": "https://github.com/angular-ngx-stepper/angular-ngx-stepper",
+  "homepage": "https://github.com/nik2208/angular-ngx-stepper",
   "repository": {
     "type": "git",
-    "url": "https://github.com/angular-ngx-stepper/angular-ngx-stepper.git"
+    "url": "https://github.com/nik2208/angular-ngx-stepper.git"
   },
   "peerDependencies": {
     "@angular/animations": "*",

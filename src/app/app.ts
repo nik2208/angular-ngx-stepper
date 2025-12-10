@@ -1,10 +1,10 @@
 import { CdkStepperModule } from '@angular/cdk/stepper';
 import { Component, signal } from '@angular/core';
-import { NgxStepperComponent } from 'ngx-stepper';
 import { StepOneComponent } from './step-one/step-one.component';
 import { StepTwoComponent } from './step-two/step-two.component';
 import { StepThreeComponent } from './step-three/step-three.component';
 import { StepFourComponent } from './step-four/step-four.component';
+import { NgxStepperComponent } from 'ngx-stepper-component';
 
 @Component({
   selector: 'app-root',

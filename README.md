@@ -4,6 +4,9 @@ A modern Angular stepper/wizard component built on top of [Angular CDK Stepper](
 
 This is an updated port of [angular-ng-stepper](https://github.com/gmerabishvili/angular-ng-stepper) by [Giorgi Merabishvili](https://www.linkedin.com/in/giorgi-merabishvili-3719a2121/), modernized for Angular 20+ with standalone components and signals.
 
+## Demo
+[StackBlitz](https://stackblitz.com/edit/stackblitz-starters-awqxydfc)
+
 ## Description
 
 The ngx-stepper is a simple wizard/stepper component for Angular. It extends the Angular CDK Stepper with a modern, maintainable codebase using Angular's latest features including standalone components, signals, and `@angular/cdk` stepper utilities.
@@ -13,7 +16,7 @@ The ngx-stepper is a simple wizard/stepper component for Angular. It extends the
 ### Installation
 
 ```bash
-npm install @angular/cdk ngx-stepper
+npm install @angular/cdk ngx-stepper-component
 ```
 
 ### Basic Usage
